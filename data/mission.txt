@@ -1,0 +1,116 @@
+mission "Gauntlet (215059759173186832352459268275619015408)"
+	name "Attempt the Gauntlet!"
+	description "Travel through the wormhole and destroy all enemies!"
+	source "Mysterious Moon"
+	on offer
+		conversation
+			`The Pug does little to acknowledge your presence except to ask, "Will you attempt the Gauntlet?"`
+			choice
+				`	"I will."`
+					accept
+				`	"Not right now."`
+					defer
+	npc kill
+		government Bounty
+		personality vindictive staying
+		system "VR System 0"
+		fleet
+			names pirate
+			variant
+				"Model 512"
+		dialog "System Cleared!"
+	npc kill
+		government Bounty
+		personality vindictive staying
+		system "VR System 1"
+		fleet
+			names pirate
+			variant
+				"Marauder Falcon (Engines)"
+				"Raven (Heavy)"
+		dialog "System Cleared!"
+	npc kill
+		government Bounty
+		personality vindictive staying
+		system "VR System 2"
+		fleet
+			names pirate
+			variant
+				"Pond Strider (Ion)"
+				"Marauder Firebird"
+		dialog "System Cleared!"
+	npc kill
+		government Bounty
+		personality vindictive staying
+		system "VR System 3"
+		fleet
+			names pirate
+			variant
+				"Lightning Bug"
+				"Starling (Hunter)"
+		dialog "System Cleared!"
+	npc kill
+		government Bounty
+		personality vindictive staying
+		system "VR System 4"
+		fleet
+			names pirate
+			variant
+				"Heliarch Interdictor (Bombardment)"
+		dialog "System Cleared!"
+	npc kill
+		government Bounty
+		personality vindictive staying
+		system "VR System 5"
+		fleet
+			names pirate
+			variant
+				"Telis'het (Guns)"
+				"Cool Breeze"
+		dialog "System Cleared!"
+	npc kill
+		government Bounty
+		personality vindictive staying
+		system "VR System 6"
+		fleet
+			names pirate
+			variant
+				Hurricane
+		dialog "System Cleared!"
+	npc kill
+		government Bounty
+		personality vindictive staying
+		system "VR System 7"
+		fleet
+			names pirate
+			variant
+				Tempest
+				"Marauder Bounder"
+		dialog "System Cleared!"
+	npc kill
+		government Bounty
+		personality vindictive staying
+		system "VR System 8"
+		fleet
+			names pirate
+			variant
+				"Heliarch Breacher (Missile)"
+				"Marauder Arrow"
+		dialog "System Cleared!"
+	npc kill
+		government Bounty
+		personality vindictive staying
+		system "VR System 9"
+		fleet
+			names pirate
+			variant
+				"Heliarch Punisher"
+		dialog "System Cleared!"
+	on accept
+		event "gauntlet show"
+	on complete
+		event "gauntlet clear"
+		event "gauntlet hide"
+		payment 1000000
+		dialog "The Pug says nothing this time, but pays you <payment>."
+

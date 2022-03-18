@@ -1,0 +1,138 @@
+system "VR System 0"
+	pos 20000 14000
+	government Bounty
+	link "VR System 1"
+	asteroids "medium rock" 12 8.6630
+	asteroids "large metal" 29 8.9070
+	asteroids "small rock" 33 5.2282
+	fleet healthpacks 8000
+	object
+		sprite star/g0
+		period 10
+	object "The Gauntlet"
+		sprite planet/wormhole
+		distance 540
+		period 206
+
+system "VR System 1"
+	pos 19946 13986
+	government Bounty
+	link "VR System 0"
+	link "VR System 2"
+	fleet healthpacks 8000
+	object
+		sprite star/k5
+		period 10
+
+system "VR System 2"
+	pos 19903 13947
+	government Bounty
+	link "VR System 1"
+	link "VR System 3"
+	asteroids "small rock" 37 4.2340
+	asteroids "large metal" 7 9.8880
+	asteroids "medium metal" 24 9.8865
+	fleet healthpacks 8000
+	object
+		sprite star/g0
+		period 10
+
+system "VR System 3"
+	pos 19879 13887
+	government Bounty
+	link "VR System 2"
+	link "VR System 4"
+	asteroids "large rock" 2 3.1172
+	asteroids "small rock" 12 8.3595
+	asteroids "small metal" 19 9.5560
+	fleet healthpacks 8000
+	object
+		sprite star/m8
+		period 10
+
+system "VR System 4"
+	pos 19881 13814
+	government Bounty
+	link "VR System 3"
+	link "VR System 5"
+	asteroids "small metal" 18 3.5658
+	asteroids "medium metal" 83 1.1142
+	asteroids "medium rock" 13 3.6499
+	asteroids "large metal" 31 2.1063
+	fleet healthpacks 8000
+	object
+		sprite star/m4
+		period 10
+	object "Checkpoint 0"
+		sprite planet/digitalplanet
+		distance 960
+		period 450
+
+system "VR System 5"
+	pos 19913 13739
+	government Bounty
+	link "VR System 4"
+	link "VR System 6"
+	fleet healthpacks 8000
+	object
+		sprite star/a0
+		period 10
+
+system "VR System 6"
+	pos 19976 13670
+	government Bounty
+	link "VR System 5"
+	link "VR System 7"
+	asteroids "large metal" 19 5.4383
+	asteroids "medium metal" 15 9.8464
+	asteroids "small metal" 25 7.0141
+	asteroids "small rock" 9 9.4411
+	asteroids "large rock" 4 3.2395
+	fleet healthpacks 8000
+	object
+		sprite star/k0
+		period 10
+
+system "VR System 7"
+	pos 20068 13621
+	government Bounty
+	link "VR System 6"
+	link "VR System 8"
+	asteroids "small rock" 28 4.1004
+	asteroids "large rock" 18 6.1597
+	fleet healthpacks 8000
+	object
+		sprite star/m8
+		period 10
+
+system "VR System 8"
+	pos 20183 13599
+	government Bounty
+	link "VR System 7"
+	link "VR System 9"
+	asteroids "small metal" 48 2.1633
+	asteroids "small rock" 32 4.9055
+	asteroids "large metal" 16 9.4022
+	asteroids "large rock" 13 3.7406
+	fleet healthpacks 8000
+	object
+		sprite star/k0
+		period 10
+
+system "VR System 9"
+	pos 20310 13614
+	government Bounty
+	link "VR System 8"
+	asteroids "small rock" 10 4.2815
+	fleet healthpacks 8000
+	object
+		sprite star/a0
+		period 10
+
+planet "Checkpoint 0"
+	attributes gauntlet
+	landscape land/gauntlet
+	description "You have reached checkpoint 1. There are 0 checkpoints remaining."
+	spaceport "The spaceport here is empty."
+	outfitter "Gauntlet Ammo"
+
