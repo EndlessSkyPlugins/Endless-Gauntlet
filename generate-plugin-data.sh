@@ -7,12 +7,16 @@
 # Docker version 20.10.13, build a224086
 # Python 3.10.3
 
+set -exuo pipefail
+
 if ! type -P docker; then
   echo 'ERROR: requires docker to generate' >&2
+  exit 1
 fi
 
 if  [ ! -d ../endless-sky ]; then
   echo 'ERROR: requires endless-sky to be cloned in the same location as this repo.' >&2
+  exit 1
 fi
 
 if [ ! -d data ]; then
