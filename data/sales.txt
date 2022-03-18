@@ -1,0 +1,16 @@
+outfitter "Gauntlet Ammo"
+	"Korath Piercer"
+	"Korath Mine"
+	"Meteor Missile"
+	"Sidewinder Missile"
+	Javelin
+	Torpedo
+	"Typhoon Torpedo"
+	"Heavy Rocket"
+	"Gatling Gun Ammo"
+	"Finisher Torpedo"
+	"Railgun Slug"
+	"Hai Tracker"
+	"EMP Torpedo"
+	"Thunderhead Missile"
+

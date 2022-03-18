@@ -1,0 +1,12 @@
+event "gauntlet clear"
+	unvisit "VR System 0"
+	unvisit "VR System 1"
+	unvisit "VR System 2"
+	unvisit "VR System 3"
+	unvisit "VR System 4"
+	unvisit "VR System 5"
+	unvisit "VR System 6"
+	unvisit "VR System 7"
+	unvisit "VR System 8"
+	unvisit "VR System 9"
+
